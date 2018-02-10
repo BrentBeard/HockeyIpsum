@@ -20,6 +20,8 @@ function paragraphsNum(linesVar, shifts) {
 
 let audio = "assets/ICESKATE.mp3"
 
+new Clipboard('.copyButton');
+
 function init() {
     $('form').on('submit', function (e) {
         e.preventDefault();
