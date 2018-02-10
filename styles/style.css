@@ -3,7 +3,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
 body {
-    background: url(assets/filip-mroz-194421-edit.jpg);
+    background: url(../assets/filip-mroz-194421-edit.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -11,24 +11,14 @@ body {
     font-family: 'Fjalla One', sans-serif;
 }
 
+
+
 h1 {
     text-align: center;
     /* color: #bce0c2; */
     color: #FA7456;
-    margin: 40px auto;
+    margin: 25px auto;
     font-size: 75px;
-}
-
-.shifts p, .lines p {
-    color: rgb(57, 59, 109);
-    font-size: 18px;
-}
-
-.shifts {
-    margin-bottom: 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .wrapper {
@@ -65,6 +55,45 @@ h1 {
     .wrapper {
         width: 100%;
     }
+}
+
+.fa-hockey-puck {
+    font-size: 50px;
+    color:#FA7456;
+}
+
+.puckButton {
+    padding: 0px;
+    width: 50px;
+    border: none;
+    background: none;
+    margin: 10px 15px;
+}
+
+input.puckButton:checked {
+    color:green;
+}
+
+.puckButton:hover {
+    background: none;
+}
+
+.lines p {
+    color: rgb(57, 59, 109);
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+.shiftHead {
+    color: rgb(57, 59, 109);
+    font-size: 18px;
+}
+
+.shifts {
+    margin-bottom: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 form {
@@ -104,11 +133,13 @@ button {
 
 .copyButton {
     width: 200px;
+    margin-top: 20px;
 }
 
 .result {
     text-align: center;
-    background: rgba(188, 224, 194, 1);
+    background: rgba(188, 224, 194, 0.7);
+    /* background: rgba(250, 116, 86, 0.7); */
     margin: 20px auto;
     
 }
@@ -119,6 +150,8 @@ button {
     color: rgb(57, 59, 109);
     font-size: 18px;
     line-height: 1.5;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
 }
 
 footer {

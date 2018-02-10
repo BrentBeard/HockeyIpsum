@@ -5,16 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hockey Ipsum</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/animate1.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Six+Caps" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
+    <!-- <button class="puckButton"><i class="fas fa-hockey-puck animated infinite pulse"></i></button> -->
     <main>
         <div class="wrapper">
             <h1>Hockey Ipsum</h1>
             <form action="">
-                <p>How many shifts?</p>
+                <p class="shiftHead">How many shifts?</p>
                 <div class="shifts">
                     <input type="radio" id="shiftChoice1"
                     name="shift" value="1">
@@ -62,10 +65,10 @@
                     name="line" value="4">
                     <label for="lineChoice4">4</label>
                 </div>
-                <button class="submitButton" type="submit">Let's go!</button>
+                <button href="#result" class="submitButton" type="submit">Let's go!</button>
             </form>
     
-            <div class="result"></div>
+            <div id="result"class="result"></div>
             <button class="copyButton" data-clipboard-action="copy" data-clipboard-target=".result">Put it on the tape, bud</button>
             
             <footer>
@@ -73,7 +76,7 @@
             </footer>
         </div>
     </main>
-    <!-- <audio preload="auto" class="skateSound" src="assets/ICESKATE.mp3"></audio> -->
+
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>
 <script src="https://cdn.jsdelivr.net/npm/clipboard@1/dist/clipboard.min.js"></script>
 <script src="scripts.js"></script>
