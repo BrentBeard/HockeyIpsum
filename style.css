@@ -2,16 +2,66 @@ article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary
 .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
 * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
 
-.wrapper {
-    width: 50%;
-    margin: 0 auto;
+body {
+    background: url(assets/filip-mroz-194421-edit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    font-family: 'Fjalla One', sans-serif;
 }
 
-@media (max-width:700px) {
+h1 {
+    text-align: center;
+    /* color: #bce0c2; */
+    color: #FA7456;
+    margin: 15px auto;
+    font-size: 75px;
+    /* font-family: 'Fjalla One', sans-serif; */
+}
+
+.shifts p, .lines p {
+    color: rgb(57, 59, 109);
+    font-size: 18px;
+}
+
+.shifts {
+    margin-bottom: 20px;
+}
+
+.wrapper {
+    width: 50%;
+    padding: 0 20px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width:925px) {
    .wrapper {
        width: 75%;
-   }
-       
+   }       
+}
+
+@media (max-width: 615px) {
+    h1 {
+        font-size: 50px;
+    }
+    .wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 535px) {
+    .wrapper {
+        width: 95%;
+    }
+}
+
+@media (max-width: 480px) {
+    .wrapper {
+        width: 100%;
+    }
 }
 
 form {
@@ -22,10 +72,46 @@ form {
     text-align: center;
 }
 
+form input {
+    display: none;
+}
+
+form label {
+    background-color: rgba(188, 224, 194, 0.5);
+    padding: 10px;
+    border-radius: 2px;
+    margin: 0 5px;
+    color: rgb(57, 59, 109);
+}
+
+form label:hover, form input:checked + label {
+    background-color: #FA7456;
+    cursor: pointer;
+}
+
 button {
-    margin-top: 20px;
+    margin: 50px 0 0;
+    width: 100px;
+    background: rgba(188, 224, 194, 0.5);
+    color: rgb(57, 59, 109);
 }
 
 .result {
     text-align: center;
+    background: rgba(188, 224, 194, 0.5);
+    margin: 20px 0;
+}
+
+.result p {
+    transition: all 1s ease;
+    padding: 5px 20px;
+    color: rgb(57, 59, 109);
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+footer {
+    color:#FA7456;
+    font-size: 10px;
+    margin-top: 50px;
 }

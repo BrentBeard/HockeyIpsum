@@ -6,64 +6,73 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hockey Ipsum</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
 </head>
 <body>
-    <div class="wrapper">
-        <form action="">
-            <div class="shifts">
-                <p>How many shifts?</p>
-                <input type="radio" id="shiftChoice1"
-                name="shift" value="1">
-                <label for="shiftChoice1">1</label>
-                <input type="radio" id="shiftChoice2"
-                name="shift" value="2">
-                <label for="shiftChoice2">2</label>
-                <input type="radio" id="shiftChoice3"
-                name="shift" value="3">
-                <label for="shiftChoice3">3</label>
-                <input type="radio" id="shiftChoice4"
-                name="shift" value="4">
-                <label for="shiftChoice4">4</label>
-                <input type="radio" id="shiftChoice5"
-                name="shift" value="5">
-                <label for="shiftChoice5">5</label>
-                <input type="radio" id="shiftChoice6"
-                name="shift" value="6">
-                <label for="shiftChoice6">6</label>
-                <input type="radio" id="shiftChoice7"
-                name="shift" value="7">
-                <label for="shiftChoice7">7</label>
-                <input type="radio" id="shiftChoice8"
-                name="shift" value="8">
-                <label for="shiftChoice8">8</label>
-                <input type="radio" id="shiftChoice9"
-                name="shift" value="9">
-                <label for="shiftChoice9">9</label>
-                <input type="radio" id="shiftChoice10"
-                name="shift" value="10">
-                <label for="shiftChoice10">10</label>
-            </div>
-            <div class="lines">
-                <p>How many lines are going tonight?</p>
-                <input type="radio" id="lineChoice1"
-                name="line" value="1">
-                <label for="lineChoice1">1</label>
-                <input type="radio" id="lineChoice2"
-                name="line" value="2">
-                <label for="lineChoice2">2</label>
-                <input type="radio" id="lineChoice3"
-                name="line" value="3">
-                <label for="lineChoice3">3</label>
-                <input type="radio" id="lineChoice4"
-                name="line" value="4">
-                <label for="lineChoice4">4</label>
-            </div>
-            <button type="submit">Submit</button>
-        </form>
-
-
-        <div class="result"></div>
-    </div>
+    <main>
+        <div class="wrapper">
+            <h1>Hockey Ipsum</h1>
+            <form action="">
+                <div class="shifts">
+                    <p>How many shifts?</p>
+                    <input type="radio" id="shiftChoice1"
+                    name="shift" value="1">
+                    <label for="shiftChoice1">1</label>
+                    <input type="radio" id="shiftChoice2"
+                    name="shift" value="2">
+                    <label for="shiftChoice2">2</label>
+                    <input type="radio" id="shiftChoice3"
+                    name="shift" value="3">
+                    <label for="shiftChoice3">3</label>
+                    <input type="radio" id="shiftChoice4"
+                    name="shift" value="4">
+                    <label for="shiftChoice4">4</label>
+                    <input type="radio" id="shiftChoice5"
+                    name="shift" value="5">
+                    <label for="shiftChoice5">5</label>
+                    <input type="radio" id="shiftChoice6"
+                    name="shift" value="6">
+                    <label for="shiftChoice6">6</label>
+                    <input type="radio" id="shiftChoice7"
+                    name="shift" value="7">
+                    <label for="shiftChoice7">7</label>
+                    <input type="radio" id="shiftChoice8"
+                    name="shift" value="8">
+                    <label for="shiftChoice8">8</label>
+                    <input type="radio" id="shiftChoice9"
+                    name="shift" value="9">
+                    <label for="shiftChoice9">9</label>
+                    <input type="radio" id="shiftChoice10"
+                    name="shift" value="10">
+                    <label for="shiftChoice10">10</label>
+                </div>
+                <div class="lines">
+                    <p>How many lines are going tonight?</p>
+                    <input type="radio" id="lineChoice1"
+                    name="line" value="1">
+                    <label for="lineChoice1">1</label>
+                    <input type="radio" id="lineChoice2"
+                    name="line" value="2">
+                    <label for="lineChoice2">2</label>
+                    <input type="radio" id="lineChoice3"
+                    name="line" value="3">
+                    <label for="lineChoice3">3</label>
+                    <input type="radio" id="lineChoice4"
+                    name="line" value="4">
+                    <label for="lineChoice4">4</label>
+                </div>
+                <button class="submitButton" type="submit">Submit</button>
+            </form>
+    
+            <div class="result"></div>
+            <button class="copyButton">Copy</button>
+            
+            <footer>
+    <h2>Made by Brent Carabott</h2>
+            </footer>
+        </div>
+    </main>
+    <!-- <audio preload="auto" class="skateSound" src="assets/ICESKATE.mp3"></audio> -->
 <script src='https://code.jquery.com/jquery-3.2.1.min.js' integrity='sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4='crossorigin='anonymous'></script>    
 <script src="scripts.js"></script>
 </body>
