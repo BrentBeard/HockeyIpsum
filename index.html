@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hockey Ipsum</title>
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="shortcut icon" href="assets/ice-hockey.png">
     <link rel="stylesheet" href="styles/animate1.css">
     <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </head>
 <body>
-    <!-- <button class="puckButton"><i class="fas fa-hockey-puck animated infinite pulse"></i></button> -->
     <main>
         <div class="wrapper">
             <h1>Hockey Ipsum</h1>
@@ -65,14 +65,26 @@
                     name="line" value="4">
                     <label for="lineChoice4">4</label>
                 </div>
+                
                 <button href="#result" class="submitButton" type="submit">Let's go!</button>
             </form>
     
-            <div id="result"class="result"></div>
+            <div id="result" class="result"></div>
             <button class="copyButton" data-clipboard-action="copy" data-clipboard-target=".result">Put it on the tape, bud</button>
             
             <footer>
-    <h2>Made by Brent Carabott</h2>
+                    <input type="checkbox" class="puckButtonCheck" id="puckButton">
+                    <label for="puckButton">
+                        <i class="fas fa-hockey-puck animated infinite pulse"></i>
+                    </label>
+                <div class="footer-hidden">
+                    <h2>Made by Brent Carabott</h2>
+                    <div>Icons made by
+                        <a href="https://www.flaticon.com/authors/twitter" title="Twitter">Twitter</a> from
+                        <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by
+                        <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+                    </div>
+                </div>
             </footer>
         </div>
     </main>

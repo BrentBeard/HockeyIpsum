@@ -57,27 +57,6 @@ h1 {
     }
 }
 
-.fa-hockey-puck {
-    font-size: 50px;
-    color:#FA7456;
-}
-
-.puckButton {
-    padding: 0px;
-    width: 50px;
-    border: none;
-    background: none;
-    margin: 10px 15px;
-}
-
-input.puckButton:checked {
-    color:green;
-}
-
-.puckButton:hover {
-    background: none;
-}
-
 .lines p {
     color: rgb(57, 59, 109);
     font-size: 18px;
@@ -159,3 +138,26 @@ footer {
     font-size: 10px;
     margin-top: 50px;
 }
+.footer-hidden {
+    display: none;
+    padding-left: 50px;
+    transition: all 1s ease;
+    float: right;
+}
+
+input#puckButton {
+    display: none;
+}
+
+input.puckButtonCheck:checked ~ .footer-hidden {
+    display: block;
+}
+
+
+.fa-hockey-puck {
+    cursor: pointer;
+    font-size: 50px;
+    color:#FA7456;
+}
+
+
