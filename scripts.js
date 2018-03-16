@@ -29,7 +29,8 @@ function init() {
         let linesSelection = $('.lines input[name=line]:checked').val();
         const finalLines = paragraphsNum(linesSelection, shiftSelection);
         $(".result").html(`${finalLines}`);
-        new Audio(audio[Math.floor(Math.random() * audio.length)]).play()
+        
+        // new Audio(audio[Math.floor(Math.random() * audio.length)]).play()
     });
 }
 
